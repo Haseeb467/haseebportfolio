@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "../components/lightswind.css";
+.typewriter-text {
+  display: inline-block;
+}
+
+.typewriter-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  background-color: #000;
+  vertical-align: middle;
+  animation: blink 0.5s step-end infinite;
+}
+@keyframes blink {
+  50% { opacity: 0; }
+}
