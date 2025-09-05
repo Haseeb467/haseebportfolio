@@ -121,7 +121,7 @@ const AboutPage = () => {
               BIOGRAPHY
             </h1>
             <p className="text-lg text-gray-600 leading-relaxed">
-               Welcome to my digital journey! I'm a passionate developer specializing in 
+              Welcome to my digital journey! I&apos;m a passionate developer specializing in 
               MERN Stack, WordPress, and AI Agent development. With hands-on experience 
               building full-stack applications, intelligent automation, dynamic websites, 
               and modern web solutions, I focus on creating responsive, scalable, and 
@@ -131,8 +131,8 @@ const AboutPage = () => {
             <blockquote className="italic text-gray-500 border-l-4 border-blue-500 pl-4 bg-blue-50 p-4 rounded-r-lg">
               {/* "Code is poetry written in logic, and every project is a new verse
               in the digital symphony." */}
-              "Every line of code is a step toward innovation, and each project is an 
-              opportunity to turn ideas into impactful digital solutions."
+              &apos;Every line of code is a step toward innovation, and each project is an 
+              opportunity to turn ideas into impactful digital solutions.&apos;
             </blockquote>
             {/* <div className="self-end opacity-60">
               <svg

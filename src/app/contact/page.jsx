@@ -1,14 +1,13 @@
 "use client";
 import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
 import { ConfettiButton } from "@/components/lightswind/confetti-button";
 
 const ContactPage = () => {
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
-  const [focusedField, setFocusedField] = useState(null);
+  // const [focusedField, setFocusedField] = useState(null);
   
   const form = useRef();
   const textRef = useRef();
@@ -194,7 +193,7 @@ const ContactPage = () => {
               animate={isTextInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
               transition={{ duration: 0.8, delay: 0.5 }}
             >
-              Ready to bring your ideas to life? Let's start a conversation!
+              Ready to bring your ideas to life? Let&apos;s start a conversation!
             </motion.p>
             <motion.div
               className="space-y-4"
@@ -245,7 +244,7 @@ const ContactPage = () => {
                 <h3 className="text-3xl font-bold bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent mb-2">
                   Send a Message
                 </h3>
-                <p className="text-gray-600">I'd love to hear from you!</p>
+                <p className="text-gray-600">I&apos;d love to hear from you!</p>
               </motion.div>
               <div className="space-y-6">
                 <motion.div variants={itemVariants}>
@@ -411,7 +410,7 @@ const ContactPage = () => {
               </motion.div>
             </div>
             <h3 className="text-2xl font-bold text-white mb-2">Success!</h3>
-            <p className="text-gray-200 mb-4">Message sent successfully! I'll get back to you soon.</p>
+            <p className="text-gray-200 mb-4">Message sent successfully! I&apos;ll get back to you soon.</p>
             <motion.button
               onClick={handleClosePopup}
               className="px-4 py-2 bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-lg hover:bg-purple-700 transition-colors"

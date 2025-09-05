@@ -1,7 +1,7 @@
 import nodemailer from "nodemailer";
 import validator from "validator";
 
-export async function POST(req, res) {
+export async function POST(req) {
   if (req.method !== "POST") {
     return new Response(JSON.stringify({ message: "Method not allowed" }), { status: 405 });
   }

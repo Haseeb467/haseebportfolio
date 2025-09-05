@@ -430,7 +430,7 @@ const PortfolioPage = () => {
             </defs>
             <text fill="#374151">
               <textPath xlinkHref="#circlePath" className="text-sm sm:text-lg font-medium">
-                Let's Build Something Amazing Together •
+                Let&apos;s Build Something Amazing Together •
               </textPath>
             </text>
           </motion.svg>
