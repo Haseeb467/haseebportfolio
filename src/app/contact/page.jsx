@@ -7,8 +7,7 @@ const ContactPage = () => {
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
-  // const [focusedField, setFocusedField] = useState(null);
-  
+  const [focusedField, setFocusedField] = useState(null);
   const form = useRef();
   const textRef = useRef();
   const formRef = useRef();

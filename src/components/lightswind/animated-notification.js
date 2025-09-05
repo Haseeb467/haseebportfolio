@@ -89,7 +89,7 @@ async function generateNotification(customMessages, userApiEndpoint) {
 const AnimatedNotification = ({ maxNotifications = 3, autoInterval = 1500, autoGenerate = true, notifications = [], customMessages, animationDuration = 800, position = 'center', width = 320, showAvatars = true, showTimestamps = true, className, onNotificationClick, onNotificationDismiss, allowDismiss = true, autoDismissTimeout = 0, userApiEndpoint, variant = 'glass' }) => {
     const [notes, setNotes] = useState(notifications);
     const timeoutRef = useRef(null);
-    const dismissTimeouts = useRef(new Map());
+    const dismissTimeouts = useRef(typeof window !== 'undefined' ? new Map() : null);
     const dismissNotification = useCallback((id) => {
         setNotes(prev => {
             const noteToDismiss = prev.find(note => note.id === id);

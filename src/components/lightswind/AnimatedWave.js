@@ -161,7 +161,7 @@ const AnimatedWave = ({ className, speed = 0.015, amplitude = 30, smoothness = 3
             mouseShrinkScaleStrength: mouseShrinkScaleStrength,
             mouseShrinkScaleRadius: mouseShrinkScaleRadius,
             // Store original vertex positions to apply transformations from a constant base
-            _originalPositions: new Float32Array(),
+            _originalPositions: typeof window !== 'undefined' ? new Float32Array() : [],
             create: function (scene) {
                 // Create a new Three.js Group to hold the plane, allowing easier positioning/rotation
                 this.group = new THREE.Object3D();
